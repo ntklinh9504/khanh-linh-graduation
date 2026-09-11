@@ -3,146 +3,539 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f5f2ea">
-  <title>Thư mời tham dự — Khánh Linh</title>
+
+  <meta name="theme-color" content="#f6f2e8">
+  <title>Thư mời tốt nghiệp — Khánh Linh</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Allura&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Allura&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+
+  <!-- =========================
+       INTRO
+  ========================== -->
   <div id="intro" class="intro">
+
     <div class="intro-inner">
+
       <div class="envelope" aria-hidden="true">
         <div class="spark s1">✦</div>
         <div class="spark s2">✦</div>
+
         <div class="env-flap"></div>
+
         <div class="env-heart">♥</div>
       </div>
-      <p class="eyebrow">THƯ MỜI THAM DỰ</p>
+
+      <p class="intro-kicker">THƯ MỜI THAM DỰ</p>
+
       <h1>LỄ TỐT NGHIỆP</h1>
-      <div class="of">của</div>
+
+      <div class="intro-of">của</div>
+
       <h2>KHÁNH LINH</h2>
-      <button id="openBtn" class="primary-btn">Mở thiệp <span>→</span></button>
+
+      <button id="openBtn" class="primary-btn intro-button">
+        Mở thiệp
+        <span>→</span>
+      </button>
+
     </div>
+
   </div>
 
+
+  <!-- =========================
+       MAIN WEBSITE
+  ========================== -->
   <main id="site" class="site hidden">
-    <div class="ticket">
-      <header class="ticket-top">
-        <div class="plane-line"><span></span><b>✈</b><span></span></div>
-        <div class="decor left">♡</div>
-        <div class="decor right">✦</div>
-        <p class="eyebrow">THƯ MỜI THAM DỰ</p>
+
+    <div class="page">
+
+
+      <!-- =========================
+           HERO
+      ========================== -->
+      <header class="hero">
+
+        <p class="hero-kicker">THƯ MỜI THAM DỰ</p>
+
         <h1>LỄ TỐT NGHIỆP</h1>
-        <div class="of">của</div>
-        <h2>KHÁNH LINH</h2>
-        <p class="school">CÔNG NGHỆ THÔNG TIN · TRƯỜNG ĐẠI HỌC THỦY LỢI</p>
+
+        <div class="hero-name">
+          Nguyễn Thị Khánh Linh
+        </div>
+
+        <p class="hero-description">
+          Trân trọng kính mời bạn đến chung vui trong ngày tốt nghiệp
+          <br>
+          Một chặng bay mới sắp bắt đầu.
+        </p>
+
+        <div class="flight-path" aria-hidden="true">
+          <span></span>
+          <b>✈</b>
+          <span></span>
+        </div>
+
       </header>
 
-      <section class="hero-no-photo">
-        <div class="boarding-art" aria-hidden="true">
-          <div class="boarding-stamp">CLASS OF<br><strong>2026</strong></div>
-          <div class="cap-art">🎓</div>
-          <div class="route-line"><span></span><b>✈</b><span></span></div>
-        </div>
-        <p class="hero-kicker">ONE CHAPTER ENDS · ANOTHER BEGINS</p>
-        <h2>NGUYỄN THỊ<br>KHÁNH LINH</h2>
-        <p class="hero-school">CÔNG NGHỆ THÔNG TIN · TRƯỜNG ĐẠI HỌC THỦY LỢI</p>
-      </section>
 
-      <section class="flight-card">
-        <div class="flight-banner">
-          <span class="big-plane">✈</span>
-          <div><strong>TIME TO FLY</strong><small>TOWARDS MY FUTURE</small></div>
-          <span>♡ ☆</span>
+      <!-- =========================
+           BOARDING PASS
+      ========================== -->
+      <section class="boarding-pass">
+
+        <div class="ticket-header">
+
+          <span>BOARDING PASS · GRADUATION</span>
+
+          <span class="class-badge">
+            64CNTT2
+          </span>
+
         </div>
 
-        <div class="event-grid">
-          <div class="event-item">
-            <div class="circle-icon">▣</div>
+
+        <div class="ticket-name-row">
+
+          <h2>
+            Nguyễn Thị Khánh Linh
+          </h2>
+
+          <span class="ticket-plane">✈</span>
+
+        </div>
+
+
+        <div class="ticket-info">
+
+          <div class="ticket-info-item">
+            <span>TRƯỜNG</span>
+            <strong>Đại học Thủy Lợi</strong>
+          </div>
+
+          <div class="ticket-info-item">
+            <span>NGÀNH</span>
+            <strong>Công nghệ thông tin</strong>
+          </div>
+
+          <div class="ticket-info-item">
             <span>NGÀY</span>
-            <strong>Thứ Tư<br>23.09.2026</strong>
+            <strong>23.09.2026</strong>
           </div>
-          <div class="event-item">
-            <div class="circle-icon">◷</div>
+
+          <div class="ticket-info-item">
             <span>GIỜ</span>
-            <strong>13:00<br><i>—</i><br>17:00</strong>
+            <strong>13:00 – 17:00</strong>
           </div>
+
+          <div class="ticket-info-item ticket-location">
+            <span>CỔNG / ĐỊA ĐIỂM</span>
+            <strong>Hội trường T45 — ĐH Thủy Lợi</strong>
+          </div>
+
         </div>
 
-        <div class="calendar-card">
-          <h3>Tháng 9 / 2026</h3>
-          <div class="week"><span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span><span>CN</span></div>
-          <div class="days">
-            <span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
-            <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span>
-            <span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
-            <span>21</span><span>22</span><span class="selected">23</span><span>24</span><span>25</span><span>26</span><span>27</span>
-            <span>28</span><span>29</span><span>30</span>
-          </div>
+
+        <div class="ticket-perforation">
+
+          <span class="notch left"></span>
+          <span class="notch right"></span>
+
         </div>
+
+
+        <div class="ticket-bottom">
+
+          <div class="barcode" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+
+          <div class="next-stop-ticket">
+            <span>✈</span>
+            <em>next stop: a bright future</em>
+          </div>
+
+        </div>
+
       </section>
 
-      <section class="location-section">
-        <div class="location-icon">⌖</div>
-        <p class="eyebrow">ĐỊA ĐIỂM</p>
-        <h2>Hội trường T45,<br>Trường Đại học Thủy lợi</h2>
-        <p>175 P. Tây Sơn, Kim Liên, Hà Nội</p>
-        <div class="map-placeholder">
-          <div class="map-grid"></div>
-          <div class="pin">●</div>
-          <span>HỘI TRƯỜNG T45</span>
-        </div>
-        <a class="outline-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hội%20trường%20T45%2C%20Trường%20Đại%20học%20Thủy%20lợi%2C%20175%20P.%20Tây%20Sơn%2C%20Hà%20Nội">⌖ XEM BẢN ĐỒ</a>
-      </section>
 
-      <section class="count-section">
-        <div class="count-card">
-          <div class="script-title">Let's celebrate! <span>♡ ☆</span></div>
-          <p>Đếm ngược đến ngày đặc biệt</p>
+      <!-- =========================
+           CALENDAR + COUNTDOWN
+      ========================== -->
+      <section class="time-card">
+
+
+        <!-- CALENDAR -->
+        <div class="calendar-area">
+
+          <div class="section-heading">
+
+            <span class="heading-icon">▣</span>
+
+            <div>
+              <strong>THÁNG 9 / 2026</strong>
+              <small>THE DAY TO REMEMBER</small>
+            </div>
+
+          </div>
+
+
+          <div class="calendar">
+
+            <div class="calendar-title">
+              Tháng 9 / 2026
+            </div>
+
+            <div class="calendar-week">
+              <span>T2</span>
+              <span>T3</span>
+              <span>T4</span>
+              <span>T5</span>
+              <span>T6</span>
+              <span>T7</span>
+              <span>CN</span>
+            </div>
+
+
+            <div class="calendar-days">
+
+              <span class="empty"></span>
+
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              <span>11</span>
+              <span>12</span>
+              <span>13</span>
+
+              <span>14</span>
+              <span>15</span>
+              <span>16</span>
+              <span>17</span>
+              <span>18</span>
+              <span>19</span>
+              <span>20</span>
+
+              <span>21</span>
+              <span>22</span>
+
+              <span class="selected-date">
+                <b>23</b>
+              </span>
+
+              <span>24</span>
+              <span>25</span>
+              <span>26</span>
+              <span>27</span>
+
+              <span>28</span>
+              <span>29</span>
+              <span>30</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- COUNTDOWN -->
+        <div class="countdown-area">
+
+          <div class="section-heading">
+
+            <span class="heading-icon plane-icon">✈</span>
+
+            <div>
+              <strong>TIME TO FLY</strong>
+              <small>TOWARDS MY FUTURE</small>
+            </div>
+
+          </div>
+
+
+          <p class="countdown-label">
+            ĐẾM NGƯỢC ĐẾN NGÀY ĐẶC BIỆT
+          </p>
+
+
           <div class="countdown">
-            <div><strong id="days">00</strong><small>Ngày</small></div>
-            <div><strong id="hours">00</strong><small>Giờ</small></div>
-            <div><strong id="minutes">00</strong><small>Phút</small></div>
-            <div><strong id="seconds">00</strong><small>Giây</small></div>
+
+            <div class="count-box">
+              <strong id="days">00</strong>
+              <small>Ngày</small>
+            </div>
+
+            <div class="count-box">
+              <strong id="hours">00</strong>
+              <small>Giờ</small>
+            </div>
+
+            <div class="count-box">
+              <strong id="minutes">00</strong>
+              <small>Phút</small>
+            </div>
+
+            <div class="count-box">
+              <strong id="seconds">00</strong>
+              <small>Giây</small>
+            </div>
+
           </div>
-          <div class="next-stop">✈ NEXT STOP: <b>A BRIGHT FUTURE</b></div>
+
+
+          <div class="future-message">
+
+            <div class="future-line">
+              <span></span>
+              <b>✈</b>
+              <span></span>
+            </div>
+
+            <em>Next stop:</em>
+
+            <strong>A BRIGHT FUTURE</strong>
+
+          </div>
+
         </div>
+
       </section>
 
+
+      <!-- =========================
+           LOCATION
+      ========================== -->
+      <section class="location-card">
+
+        <div class="location-info">
+
+          <div class="section-heading">
+
+            <span class="heading-icon">⌖</span>
+
+            <div>
+              <strong>ĐỊA ĐIỂM</strong>
+              <small>WHERE WE MEET</small>
+            </div>
+
+          </div>
+
+
+          <h2>
+            Hội trường T45,
+            <br>
+            Trường Đại học Thủy lợi
+          </h2>
+
+          <p>
+            175 P. Tây Sơn, Kim Liên, Đống Đa, Hà Nội
+          </p>
+
+        </div>
+
+
+        <div class="location-map">
+
+          <div class="map-pattern"></div>
+
+          <div class="map-pin">
+            <span>●</span>
+            <small>HỘI TRƯỜNG T45</small>
+          </div>
+
+          <a
+            class="map-button"
+            target="_blank"
+            rel="noopener"
+            href="https://www.google.com/maps/search/?api=1&query=Hội%20trường%20T45%2C%20Trường%20Đại%20học%20Thủy%20lợi%2C%20175%20P.%20Tây%20Sơn%2C%20Hà%20Nội"
+          >
+            ⌖ XEM BẢN ĐỒ
+            <span>→</span>
+          </a>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           WISHES
+      ========================== -->
       <section class="wishes-section">
-        <h2>Sổ lưu bút</h2>
+
+        <div class="section-title">
+          <span>✦</span>
+          <h2>Sổ lưu bút</h2>
+          <span>✦</span>
+        </div>
+
+
         <form id="wishForm" class="form-card">
-          <input id="wishName" required maxlength="80" placeholder="Nhập tên của bạn">
-          <textarea id="wishMessage" required maxlength="500" placeholder="Nhập lời chúc của bạn"></textarea>
+
+          <input
+            id="wishName"
+            required
+            maxlength="80"
+            placeholder="Nhập tên của bạn"
+          >
+
+          <textarea
+            id="wishMessage"
+            required
+            maxlength="500"
+            placeholder="Nhập lời chúc của bạn"
+          ></textarea>
+
+
           <div class="form-bottom">
-            <span class="bulb">💡</span>
-            <button class="primary-btn small" type="submit">Gửi lời chúc</button>
+
+            <span class="form-note">
+              💌 Một lời chúc nhỏ, một kỷ niệm đẹp.
+            </span>
+
+            <button
+              class="primary-btn small"
+              type="submit"
+            >
+              Gửi lời chúc →
+            </button>
+
           </div>
+
           <p id="wishStatus" class="status"></p>
+
         </form>
+
+
         <div id="wishesList" class="wishes-list"></div>
+
       </section>
 
+
+      <!-- =========================
+           RSVP
+      ========================== -->
       <section class="rsvp-section">
-        <h2>XÁC NHẬN THAM DỰ</h2>
-        <form id="rsvpForm" class="form-card rsvp">
-          <input id="rsvpName" required maxlength="80" placeholder="Nhập tên của bạn">
-          <div class="choice-row">
-            <label><input type="radio" name="attendance" value="attending" required><span>Tôi sẽ tham dự</span></label>
-            <label><input type="radio" name="attendance" value="not_attending"><span>Rất tiếc, tôi không thể đến</span></label>
+
+        <div class="section-heading rsvp-heading">
+
+          <span class="heading-icon">◉</span>
+
+          <div>
+            <strong>XÁC NHẬN THAM DỰ</strong>
+            <small>SEE YOU THERE</small>
           </div>
-          <input id="rsvpNote" maxlength="300" placeholder="Ghi chú (không bắt buộc)">
-          <button class="primary-btn submit" type="submit">Gửi xác nhận</button>
+
+        </div>
+
+
+        <form id="rsvpForm" class="form-card rsvp">
+
+          <input
+            id="rsvpName"
+            required
+            maxlength="80"
+            placeholder="Nhập tên của bạn"
+          >
+
+
+          <div class="choice-row">
+
+            <label>
+
+              <input
+                type="radio"
+                name="attendance"
+                value="attending"
+                required
+              >
+
+              <span>Tôi sẽ tham dự</span>
+
+            </label>
+
+
+            <label>
+
+              <input
+                type="radio"
+                name="attendance"
+                value="not_attending"
+              >
+
+              <span>Rất tiếc, tôi không thể đến</span>
+
+            </label>
+
+          </div>
+
+
+          <input
+            id="rsvpNote"
+            maxlength="300"
+            placeholder="Ghi chú (không bắt buộc)"
+          >
+
+
+          <button
+            class="primary-btn submit"
+            type="submit"
+          >
+            ✈ GỬI XÁC NHẬN
+            <span>→</span>
+          </button>
+
+
           <p id="rsvpStatus" class="status"></p>
+
         </form>
+
       </section>
 
-      <footer class="footer">WITH LOVE · KHÁNH LINH · 2026</footer>
+
+      <!-- =========================
+           FOOTER
+      ========================== -->
+      <footer class="footer">
+
+        <span></span>
+
+        <p>
+          WITH LOVE · KHÁNH LINH · 2026
+        </p>
+
+        <span></span>
+
+      </footer>
+
     </div>
+
   </main>
 
+
   <script src="./script.js"></script>
+
 </body>
 </html>
