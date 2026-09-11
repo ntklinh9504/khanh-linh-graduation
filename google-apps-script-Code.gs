@@ -11,8 +11,7 @@
  * 6) Copy the Web App URL into public/script.js as GOOGLE_SCRIPT_URL.
  */
 
-const SPREADSHEET_ID = ''; // Để trống nếu Apps Script được tạo trực tiếp từ Google Sheet.
-
+const SPREADSHEET_ID = ''; 
 function getSpreadsheet_() {
   return SPREADSHEET_ID
     ? SpreadsheetApp.openById(SPREADSHEET_ID)
@@ -25,7 +24,6 @@ function setupSheets() {
 
   const rsvp = ss.getSheetByName('RSVP') || ss.insertSheet('RSVP');
 
-  // Nếu bạn đã chạy phiên bản cũ, xóa cột "Số người" khỏi bảng RSVP.
   if (rsvp.getLastRow() >= 1 && rsvp.getLastColumn() >= 4) {
     const headers = rsvp.getRange(1, 1, 1, rsvp.getLastColumn()).getValues()[0];
     const guestsIndex = headers.indexOf('Số người');
