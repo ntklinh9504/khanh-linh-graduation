@@ -60,19 +60,6 @@ function doGet(e) {
   }
 }
 
-function doPost(e) {
-  try {
-    const p = JSON.parse(e.postData.contents);
-    const action = p.action || '';
-    if (action === 'rsvp') return addRsvp_(p);
-    if (action === 'wish') return addWish_(p);
-    return json_({ ok: false, message: 'Action không hợp lệ.' });
-  } catch (err) {
-    console.error(err);
-    return json_({ ok: false, message: 'Có lỗi xảy ra. Vui lòng thử lại.' });
-  }
-}
-
 function addRsvp_(p) {
   const name = clean_(p.name, 80);
   const attendance = clean_(p.attendance, 20);
@@ -97,7 +84,7 @@ function addRsvp_(p) {
 
 function addWish_(p) {
   const name = clean_(p.name, 80);
-  const message = clean_(p.message, 49000);
+  const message = clean_(p.message, 5000);
   if (!name || !message) {
     return json_({ ok: false, message: 'Vui lòng nhập tên và lời chúc.' });
   }

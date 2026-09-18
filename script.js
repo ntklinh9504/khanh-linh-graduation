@@ -114,11 +114,10 @@ function buildUrl(action, params = {}) {
 // GỬI DỮ LIỆU LÊN GOOGLE SHEETS
 // ==============================
 async function submitToGoogleSheet(action, params) {
-  const r = await fetch(GOOGLE_SCRIPT_URL, {
-    method: "POST",
-    headers: { "Content-Type": "text/plain;charset=utf-8" },
-    body: JSON.stringify({ action, ...params })
-  });
+  const r = await fetch(
+    buildUrl(action, params),
+    { method: "GET" }
+  );
 
   return await r.json();
 }
