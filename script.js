@@ -7,6 +7,9 @@ const intro = document.getElementById("intro");
 const site = document.getElementById("site");
 
 document.getElementById("openBtn").addEventListener("click", () => {
+
+  const music = document.getElementById("bgMusic");
+  music.play();
   intro.style.transition = "opacity .8s ease, transform .8s ease";
   intro.style.opacity = "0";
   intro.style.transform = "scale(1.03)";
@@ -16,7 +19,9 @@ document.getElementById("openBtn").addEventListener("click", () => {
     site.classList.remove("hidden");
     site.scrollIntoView({ behavior: "smooth" });
     burst();
+
   }, 700);
+
 });
 
 
