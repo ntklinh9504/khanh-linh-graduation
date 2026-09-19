@@ -28,7 +28,7 @@ document.getElementById("openBtn").addEventListener("click", () => {
 // ==============================
 // COUNTDOWN
 // ==============================
-const target = new Date("2026-09-23T16:30:00+07:00").getTime();
+const target = new Date("2026-09-23T16:00:00+07:00").getTime();
 
 function countdown() {
   let d = target - Date.now();
